@@ -1,0 +1,102 @@
+.todo-container {
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  form input {
+    padding: 10px;
+    width: 70%;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  form button:hover {
+    background-color: #218838;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Disable default bullets */
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    padding-left: 20px; /* Space for the bullet */
+  }
+  
+  li::before {
+    content: "•"; /* Add a custom bullet */
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    color: black;
+  }
+  
+  li span {
+    flex-grow: 1; /* Allow text to take the available space */
+    margin-right: 10px; /* Add some space between text and buttons */
+    word-break: break-word; /* Break long words */
+    overflow-wrap: break-word; /* Handle long unbreakable text */
+  }
+  
+  li.completed span {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  li .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  li button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  li button.delete-btn {
+    background-color: red;
+    color: white;
+  }
+  
+  li button.edit-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  li button.save-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  li button:hover {
+    opacity: 0.9;
+  }
+  
+  li input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 70%;
+  }
+  
